@@ -5,41 +5,125 @@
 <title> my personal webpage</title>
 <style>
 body {
-background-color: plum;
+background-color: darkolivegreen;
 font-family: Arial;
 color: Black;
 text-align: center;
 }
 header {
-background-color: tomato;
-color: white;
+background-color: BurlyWood;
+color: Black;
 text-align: center;
 padding: 20px;
 }
+img { 
+width:200px;
+height: 175;
+border-radius: 50%;
+border: 3px solid plum;
+margin-top: 10px;
+}
+.table-style1 {
+width: 80%;
+margin: 20px auto;
+border: 2px solid navy;
+}
+.table-style1 th,.table-style1 td{
+border: 1px solid navy;
+padding: 10px;
+text-align: center;
+}
+.table-style1 th{
+background-color: lightblue;
+}
+.table-style2 {
+width:60%;
+margin: 20px auto;
+border-collapse: collapse;
+border: 2px solid dark green;
+}
+.table-style1 th{
+background-color: lightblue;
+}
+.table-style2 th,.table-style2 td {
+border: 1px solid darkgreen;
+padding: 10px;
+text-align: center;
+}
+.table-style2 th {
+background-color: lightgreen;
+}
+h1 {
+color: navy;
+font size:36px;
+p{
+font size:18px;
+}
+.about {
+width: 60%;
+margin: 20px auto;
+text-align: left;
+}
+div.mycontianer {
+width:66%;
+overflow:auto;
+}
+div.mycontainer div {
+width:50%;
+float:left;
+}
+.video {
+width:35%;
+margin:10px auto;
+text-align:center;
+border:3px white;
+}
+.list-style1 {
+list-style: type:square;
+color:darkblue;
+text-align:left;
+margin:20px
+}
+.list-style2 {
+list-style: type:circle;
+color:darkgreen;
+text-align:left;
+margin:20px
+}
+
+
 </style>
 
+
+
+
+
+ 
+
   <body>
+<header>
+
     <h1>My Personal Webpage!!
     </h1>
-<p>
+
     <pre>
 NAME: Dalton Miller
 Age: 34
 Location: Kansas City
 </pre>
-<header> 
-<section>
+</header> 
+<section class="about">
 <p>Check out my favorite website:<a href="https://www.ultimate-guitar.com/" target="_blank">ultimate-guitar<a/>
 </p>
 <a href="mailto:dalton.miller427@gmail.com"
 target="_blank">dalton.miller427@gmail.com</a>
-</header>
+
 <a href="https://www.youtube.com/watch?v=P0QGuQBQPbc&list=RDP0QGuQBQPbc&start_radio=1&t=1812s"target="_blank">
-<img src="https://github.com/daltino27/daltino/blob/main/PSX_20250710_115527.jpg?raw=true"alt="Sample Image"></a>
+<img src="https://github.com/daltino27/daltino/blob/main/PSX_20250710_115527.jpg?raw=true"alt="Sample Image" title ="The Boys"></a>
 </section>
 <hr>
 <h2>My hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -53,13 +137,14 @@ target="_blank">dalton.miller427@gmail.com</a>
 <td>20 hours per week</td>
 </tr>
 </table>
-<h2>My Favorite Movies</h2>
-<table>
+<h2>My Favorite Movies </h2>
+<table class="table-style2">
 <tr>
 <th>Movies</th>
+<th>Rank</th>
 </tr>
-<th>The Tomorrow War</th>
-<th>Number 1</th>
+<td>The Tomorrow War</td>
+<td>Number 1</td>
 </tr>
 <tr>
 <td>John Q</td>
@@ -70,11 +155,10 @@ target="_blank">dalton.miller427@gmail.com</a>
 <td>Number 3</td>
 </tr>
 </table>
-
 <h2>My Favorite Foods</h2>
-<table>
+<table class="table-style1">
 <tr>
-<th>Favorite Meals</th>
+<th>My Favorite Foods</th>
 <th>Rank</th>
 </tr>
 <tr>
@@ -85,24 +169,27 @@ target="_blank">dalton.miller427@gmail.com</a>
 <td>Tacos</td>
 <td>Number 2</td>
 </tr>
+<td>Home fries</td>
+<td>Number 3</td>
 </table>
-<section>
+<section class="video">
 <h2>My Favorite Video</h2>
 
-
-</section>
-
 <iframe width="480" height="360" src="https://www.youtube.com/embed/3FejLuBy2kk"></iframe>
-
+</section>
+<section>
 <h2>Embeddded Website</h2>
 <iframe src="https://www.npr.org/" width="600"height="400"style="border:none;"></frame>
 
 
 
+
+</section>
+
+
   </body>
 
 </html>
-
 
 
 
